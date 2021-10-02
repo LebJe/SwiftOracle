@@ -1,12 +1,4 @@
-
-
 import cocilib
-
-
-
-
-
-
 
 public class BindVar: ExpressibleByStringLiteral, ExpressibleByIntegerLiteral, ExpressibleByBooleanLiteral, ExpressibleByFloatLiteral  {
     let bind: (OpaquePointer, String) -> Void

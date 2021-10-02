@@ -1,23 +1,20 @@
 # SwiftOracle
-OCILIB wrapper for Swift, linux compatible
+**[OCILIB](https://github.com/vrogier/ocilib) wrapper for Swift, Linux compatible**
 
 
-This is beginning point for Oracle database adapter for Swift
+This is the beginning point for an Oracle database adapter for Swift, powered by [ocilib](https://github.com/vrogier/ocilib).
 
-This is wrapper for ocilib (https://github.com/vrogier/ocilib). 
+PRs are welcome.
 
-PR are welcome.
-
-Thats what you can do:
+This is what you can do:
 
 ```swift
-let service = OracleService(host: "dv", port:"1521", service: "xe")
+let service = OracleService(host: "dv", port: "1521", service: "xe")
 
-let b = Connection(service: service, user:"broq", pwd:"anypassword")
+let b = Connection(service: service, user: "broq", pwd: "anypassword")
 
 try b.open()
 b.autocommit = true
-
 
 let cursor = try b.cursor()
 
@@ -47,5 +44,4 @@ for r in cursor {
 }
 
 print(cursor.affected)
-
 ```

@@ -1,6 +1,4 @@
-
 import cocilib
-
 
 public class Field {
     private let resultPointer: OpaquePointer
@@ -40,7 +38,7 @@ public class Field {
             }
         default:
             assert(0==1,"bad value \(type)")
-            return "asd" as! AnyObject
+            return "asd"
         }
     }
 }
@@ -55,7 +53,7 @@ public class Row {
         self.columns = columns
     }
     public subscript (name: String) -> Field? {
-        let maybeIndex = columns.index(where: {$0.name==name})
+        let maybeIndex = columns.firstIndex(where: { $0.name == name })
         guard let index = maybeIndex else {
             return nil
         }

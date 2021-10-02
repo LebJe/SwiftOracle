@@ -1,0 +1,26 @@
+# TODO: Figure out how to install ocilib on Mac and Linux
+
+# name: "Build and Test"
+
+# on: ["push", "pull_request"]
+
+# jobs:
+#     TestOnMacOS-10_15-x86_64:
+#         runs-on: "macos-10.15"
+#         steps:
+#             - uses: "actions/checkout@v2"
+#             - name: "Build"
+#               run: "swift build"
+#     TestOnMacOS-11_0-x86_64:
+#         runs-on: "macos-11"
+#         steps:
+#             - uses: "actions/checkout@v2"
+#             - name: "Build"
+#               run: "swift build"
+#     TestOnUbuntu-20_04-x86_64:
+#         runs-on: "ubuntu-latest"
+#         container: "swift:latest"
+#         steps:
+#             - uses: "actions/checkout@v2"
+#             - name: "Build"
+#               run: "swift build"

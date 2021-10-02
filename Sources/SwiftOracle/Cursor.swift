@@ -1,8 +1,5 @@
 import cocilib
 
-
-
-
 //OCI_CDT_NUMERIC
 public enum DataTypes {
     case number(scale: Int), int, timestamp, bool, string, invalid
@@ -156,6 +153,3 @@ public class Cursor : Sequence, IteratorProtocol {
         return _columns!
     }
 }
-
-
-

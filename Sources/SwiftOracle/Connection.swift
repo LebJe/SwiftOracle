@@ -1,8 +1,6 @@
-
 import cocilib
 
 //@_exported import SQL
-
 
 struct DatabaseError: CustomStringConvertible {
     let error: OpaquePointer
@@ -128,5 +126,3 @@ public class Connection {
     }
     
 }
-
-
